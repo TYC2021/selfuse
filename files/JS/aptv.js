@@ -1,18 +1,9 @@
 /******************************
 
-脚本功能：APTV+解锁订阅
-
-下载地址：https://is.gd/inlPLD
-
-TG频道群：https://t.me/gjwj6
-
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-*******************************
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/aptv.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/aptv.js
 
 [mitm] 
 
