@@ -1,18 +1,8 @@
 /******************************
 
-脚本功能：Drafts——解锁订阅
-
-下载地址：https://is.gd/jpkxDc
-
-TG频道群：https://t.me/gjwj6
-
-使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-*******************************
-
 [rewrite_local]
 
-^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/Drafts.js
+^https:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Drafts.js
 
 [mitm] 
 
