@@ -7,7 +7,7 @@
 
 
 [rewrite_local]
-^https?://api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ url script-echo-response https://raw.githubusercontent.com/gjwj666/jichang/main/qx.conf
+^https?://api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ url script-echo-response https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Fileball.js
 
 hostname = api.revenuecat.com
 
