@@ -1,0 +1,6 @@
+#!name= PDF Expert 高级版
+#!desc= PDF Expert 高级版解锁.
+#!system=ios
+
+hostname = license.pdfexpert.com
+^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Readdle/PDFExpert.js,script-update-interval=0
