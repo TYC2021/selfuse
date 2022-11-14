@@ -5,7 +5,7 @@
 QuantumultX:
 
 [rewrite_local]
-^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js
+^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Luqi.js
 
 [mitm]
 hostname = www.luqijianggushi.com
