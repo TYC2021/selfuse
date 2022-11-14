@@ -1,17 +1,10 @@
 /******************************
 
-脚本功能：Craft - 文件及笔记编辑器——解锁订阅
-
-下载地址：https://is.gd/ngDZcJ
-
-TG频道群：https://t.me/gjwj6
-
-
-*******************************
+脚本功能：Craft - 文件及笔记编辑器——解锁
 
 [rewrite_local]
 
-^https:\/\/api\.craft\.do\/auth\/v2\/profile url script-response-body https://raw.githubusercontent.com/gjwj666/jichang/main/Craft.js
+^https:\/\/api\.craft\.do\/auth\/v2\/profile url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Craft.js
 
 [mitm] 
 
