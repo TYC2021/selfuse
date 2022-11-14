@@ -2,16 +2,10 @@
 
 脚本功能：documents文件管理器+解锁订阅
 
-下载地址：https://is.gd/DLjoIn
-
-TG频道群：https://t.me/gjwj6
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-*******************************
 
 [rewrite_local]
 
-^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/gjwj666/qx/main/documents.js
+^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh url script-request-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/documents.js
 
 [mitm] 
 
