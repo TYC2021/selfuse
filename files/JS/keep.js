@@ -2,18 +2,13 @@
 
 脚本功能：Keep -跑步健身——解锁VIP
 
-下载地址：https://is.gd/crzdNV
-
-^_^
-TG频道群：https://t.me/gjwj6
-
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 *******************************
 
 [rewrite_local]
 
-^https:\/\/api\.gotokeep\.com url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/keep.js
+^https:\/\/api\.gotokeep\.com url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/keep.js
 
 [mitm] 
 
