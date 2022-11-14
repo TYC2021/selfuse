@@ -2,7 +2,7 @@
 PDF Expert Unlock
 QuantumultX:
 [rewrite_local]
-Documents-PdfExpert url script-response-body ^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/PDFExpert.js,script-update-interval=-1
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body ^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/PDFExpert.js,script-update-interval=-1
 hostname = %APPEND% license.pdfexpert.com
 [MITM]
 hostname = license.pdfexpert.com
