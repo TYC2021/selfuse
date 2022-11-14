@@ -1,5 +1,13 @@
 /*
 PDF Expert Unlock
+QuantumultX:
+[rewrite_local]
+Documents-PdfExpert = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/PDFExpert.js,script-update-interval=-1
+hostname = %APPEND% license.pdfexpert.com
+[MITM]
+hostname = license.pdfexpert.com
+
+Surge or Loon:
 [MITM]
 hostname = license.pdfexpert.com
 [Script]
