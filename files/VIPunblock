@@ -5,31 +5,31 @@
 hostname = %APPEND% api.revenuecat.com,app-measurement.com,biz.caiyunapp.com,account.wps.cn,*.wtzw.com,api.polaxiong.com,mb3admin.com,buy.itunes.apple.com,xluser-ssl.xunlei.com,vsco.co, api.revenuecat.com,pan.baidu.com,lcs-mobile-cops.adobe.io,createpdf.acrobat.com,mp.weixin.qq.com,*.kuwo.cn,*.lrts.me,restore-access.indream.app
 
 #fileball+解锁订阅 
-^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js,script-update-interval=0,max-size=0
+^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js,script-update-interval=0,max-size=0
 
 #Nicegram: Unlimited Text+解锁订阅
-https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10},requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Nicegram.js
+https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Nicegram.js
 
 #WPS稻壳会员1
-^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips,requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js,script-update-interval=0,max-size=0
+^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js,script-update-interval=0,max-size=0
 #WPS稻壳会员
-^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail),requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js,script-update-interval=0,max-size=0
+^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js,script-update-interval=0,max-size=0
 
 
 #微信阅读
-^https?://mp\.weixin\.qq\.com/s.+?,requires-body=1,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, argument="</script>->setTimeout(()=>window.history.back(),6000); </script>"
+^https?://mp\.weixin\.qq\.com/s.+? url script-response-body https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, argument="</script>->setTimeout(()=>window.history.back(),6000); </script>"
 
 #彩云天气vip
-^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
+^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
 
 # > 082 傲軟摳圖解鎖V權限（2022-02-25）@ddgksf2013
-^https?:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations$,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/apowersoft.js,script-update-interval=0,max-size=0
+^https?:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations$ url script-response-body https://raw.githubusercontent.com/28413761/QX/main/jiesuo/apowersoft.js,script-update-interval=0,max-size=0
 
 # Adobe Photoshop, Adobe Illustrator, Adobe Lightroom, Premiere Rush, Adobe Express, Spark Page, Spark Video, Adobe Fresco
 ^https://lcs-mobile-cops.adobe.io/mobile_profile/nulhttps://raw.githubusercontent.com/jsj0622/Surge/main/adobe.js
 
 # Adobe Scan, Adobe Acrobat
-^https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/jsj0622/Surge/main/adobeScanPdf.js
+^https://createpdf.acrobat.com/createpdf/api/users/me/subscriptions url script-response-body https://raw.githubusercontent.com/jsj0622/Surge/main/adobeScanPdf.js
 
 
 
