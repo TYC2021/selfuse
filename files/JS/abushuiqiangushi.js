@@ -2,17 +2,10 @@
 
 脚本功能：阿布睡前故事+解锁VIP
 
-下载地址：https://is.gd/6Q6lRw
-
-TG频道群：https://t.me/gjwj6
-
-使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
-
-*******************************
 
 [rewrite_local]
 
-http:\/\/tutugushiapi\.tutuerge\.com url script-response-body https://raw.githubusercontent.com/gjwj666/qx/main/abushuiqiangushi.js
+http:\/\/tutugushiapi\.tutuerge\.com url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/abushuiqiangushi.js
 
 [mitm] 
 
