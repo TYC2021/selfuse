@@ -1,0 +1,18 @@
+#WPS Office 解锁部分功能
+^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/WPS.js
+
+#百度云盘
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js
+
+#恢复订阅以下5个app:
+#(Fileball)(Taio)(Photo)(Pillow)(VSCO)
+^https?://api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ url script-echo-response https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Fileball.js
+
+#Spotify
+#  部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
+# 仓库地址 https://github.com/app2smile/rules
+# 1. 搜索界面 歌单/歌曲可以随意切换完全播放  2. 音乐库已点赞歌曲随意切换完全播放
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+
+hostname = *account.wps.cn, *account.wps.com,pan.baidu.com,api.revenuecat.com,spclient.wg.spotify.com
