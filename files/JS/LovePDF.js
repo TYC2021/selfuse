@@ -8,7 +8,7 @@
 
 [rewrite_local]
 
-https://service.ilovepdf.com/v1/user url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/LovePDF
+https://service.ilovepdf.com/v1/user url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/LovePDF.js
 
 
 [mitm] 
