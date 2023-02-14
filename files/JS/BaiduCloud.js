@@ -3,7 +3,7 @@
 ***************************
 QuantumultX:
 [rewrite_local]
-https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js
+https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://github.com/TYC2021/selfuse/raw/main/files/JS/BaiduCloud.js
 [mitm]
 hostname = pan.baidu.com
 ***************************
