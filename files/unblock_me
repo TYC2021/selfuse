@@ -4,10 +4,6 @@
 #百度云盘
 https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user url script-response-body https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js
 
-#恢复订阅以下app:
-#(Fileball)
-#^https?://api\.revenuecat\.com/v\d/(subscribers/(\$RCAnonymousID\%)?(\w)+|receipts)$ url script-echo-response https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/Fileball.js
-
 #Spotify
 #  部分解锁premium 需iOS15 ,建议重新登录,音质不能设置为超高
 # 仓库地址 https://github.com/app2smile/rules
