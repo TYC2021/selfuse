@@ -2,9 +2,7 @@
 #!desc=百度网盘解锁倍速
 #!author= TYC2021
 #!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduNetDisk.png
-
 [Script]
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/TYC2021/selfuse/raw/main/files/JS/BaiduCloud.js
-
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js
 [MITM]
 hostname = pan.baidu.com
