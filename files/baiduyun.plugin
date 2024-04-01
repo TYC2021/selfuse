@@ -1,6 +1,6 @@
 #!name=百度网盘解锁倍速
 #!desc=百度网盘解锁倍速
-#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Shin-chan/Shin-chan-1052.png
+#!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduNetDisk.png
 
 [Script]
 http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path=https://github.com/TYC2021/selfuse/raw/main/files/JS/BaiduCloud.js
