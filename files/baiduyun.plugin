@@ -3,6 +3,6 @@
 #!author= TYC2021
 #!icon=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduNetDisk.png
 [Script]
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/TYC2021/selfuse/main/files/JS/BaiduCloud.js,requires-body=true,script-update-interval=0,tag=BaiduCloud
 [MITM]
 hostname = pan.baidu.com
