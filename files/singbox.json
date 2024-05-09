@@ -104,7 +104,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ],
       "default": "America"
     },
@@ -117,7 +117,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -129,7 +129,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -141,7 +141,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -153,7 +153,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -182,7 +182,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ],
       "default": "America"
     },
@@ -207,7 +207,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -219,7 +219,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -232,7 +232,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -245,7 +245,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -258,7 +258,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -270,7 +270,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others"
+        "Proxy"
       ]
     },
     {
@@ -282,7 +282,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Others",
+        "Proxy",
         "direct"
       ]
     },
@@ -324,11 +324,6 @@
     },
     {
       "tag":"America",
-      "type":"selector",
-      "outbounds":[ ]
-    },
-    {
-      "tag":"Others",
       "type":"selector",
       "outbounds":[ ]
     },
