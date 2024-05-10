@@ -94,11 +94,7 @@
     {
       "tag":"Proxy",
       "type":"selector",
-      "outbounds":[
-        "auto",
-        "direct",
-        "{all}"
-      ]
+      "outbounds":[ ]
     },
     {
       "tag":"OpenAI",
