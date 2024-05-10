@@ -170,7 +170,7 @@
       "type":"selector",
       "outbounds":[
         "TaiWan",
-        "Proxy"
+        "Others"
       ]
     },
     {
@@ -182,7 +182,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Proxy"
+        "Others"
       ],
       "default": "America"
     },
@@ -194,7 +194,8 @@
         "TaiWan",
         "Singapore",
         "Japan",
-        "America"
+        "America",
+        "Others"
       ],
       "default": "Japan"
     },
@@ -207,7 +208,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Proxy"
+        "Others"
       ]
     },
     {
@@ -219,7 +220,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Proxy"
+        "Others"
       ]
     },
     {
@@ -232,7 +233,7 @@
         "Singapore",
         "Japan",
         "America",
-        "Proxy"
+        "Others"
       ]
     },
     {
@@ -306,34 +307,46 @@
       "tag":"HongKong",
       "type":"urltest",
       "outbounds":[ ]
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag":"TaiWan",
       "type":"urltest",
       "outbounds":[ ]
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag":"Singapore",
       "type":"urltest",
       "outbounds":[ ]
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag":"Japan",
       "type":"urltest",
       "outbounds":[ ]
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
     },
     {
       "tag":"America",
       "type":"urltest",
       "outbounds":[ ]
-    },
-    {
-      "tag":"auto",
-      "type":"urltest",
-      "outbounds":[ ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
       "tolerance": 50
+    },
+    {
+      "tag":"Others",
+      "type":"selector",
+      "outbounds":[ ],
     },
     {
       "type": "direct",
