@@ -94,7 +94,7 @@
     {
       "tag":"Proxy",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "tag":"OpenAI",
@@ -305,27 +305,27 @@
     {
       "tag":"HongKong",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "tag":"TaiWan",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "tag":"Singapore",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "tag":"Japan",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "tag":"America",
       "type":"urltest",
-      "outbounds":[ ],
+      "outbounds":[],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
       "tolerance": 50
@@ -333,7 +333,7 @@
     {
       "tag":"Others",
       "type":"selector",
-      "outbounds":[ ]
+      "outbounds":[]
     },
     {
       "type": "direct",
