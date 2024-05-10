@@ -42,7 +42,8 @@
       {
         "outbound": "any",
         "server": "localDns",
-        "disable_{
+        "disable_cache": true
+      }
   "log": {
     "level": "info",
     "timestamp": true
