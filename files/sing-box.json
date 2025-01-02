@@ -118,7 +118,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Telegram",
@@ -130,7 +131,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "Singapore"
     },
     {
       "tag":"Twitter",
@@ -142,7 +144,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Facebook",
@@ -154,7 +157,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"BiliBili",
@@ -163,7 +167,8 @@
         "direct",
         "HongKong",
         "TaiWan"
-      ]
+      ],
+      "default": "direct"
     },
     {
       "tag":"Bahamut",
@@ -171,7 +176,8 @@
       "outbounds":[
         "TaiWan",
         "Proxy"
-      ]
+      ],
+      "default": "TaiWan"
     },
     {
       "tag":"Spotify",
@@ -184,7 +190,7 @@
         "America",
         "Others"
       ],
-      "default": "America"
+      "default": "Singapore"
     },
     {
       "tag":"TikTok",
@@ -208,7 +214,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Disney+",
@@ -220,7 +227,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Apple",
@@ -233,7 +241,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "direct"
     },
     {
       "tag":"Microsoft",
@@ -246,7 +255,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "direct"
     },
     {
       "tag":"Games",
@@ -271,7 +281,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Global",
@@ -284,7 +295,8 @@
         "America",
         "Others",
         "direct"
-      ]
+      ],
+      "default": "HongKong"
     },
     {
       "tag":"China",
@@ -292,7 +304,8 @@
       "outbounds":[
         "direct",
         "Proxy"
-      ]
+      ],
+      "default": "direct"
     },
     {
       "tag":"AdBlock",
@@ -300,7 +313,8 @@
       "outbounds":[
         "block",
         "direct"
-      ]
+      ],
+      "default": "block"
     },
     {
       "tag":"HongKong",
