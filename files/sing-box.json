@@ -18,6 +18,11 @@
     }
   },
   "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
     "servers": [
       {
         "tag": "proxyDns",
@@ -28,6 +33,10 @@
         "tag": "localDns",
         "address": "https://223.5.5.5/dns-query",
         "detour": "direct"
+      },
+      {
+        "tag": "fakeip",
+        "address": "fakeip"
       },
       {
         "tag": "block",
@@ -42,11 +51,6 @@
       {
         "outbound": "any",
         "server": "localDns",
-        "disable_cache": true
-      },
-      {
-        "rule_set": "geosite-cn",
-        "server": "localDns"
       },   
       {
         "clash_mode": "direct",
@@ -57,12 +61,42 @@
         "server": "proxyDns"
       },
       {
-        "rule_set": "geosite-geolocation-!cn",
-        "server": "proxyDns"
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "rule_set": "geosite-cn",
+        "server": "fakeip"
+      },
+      {
+        "rule_set": "geosite-cn",
+        "server": "localDNS"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
+        ],
+        "server": "proxyDns",
+        "client_subnet": "114.114.114.114/24"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
       }
     ],
-    "final": "localDns",
-    "strategy": "ipv4_only"
+    "independent_cache": true,
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
@@ -85,7 +119,7 @@
     {
       "type": "mixed",
       "listen": "127.0.0.1",
-      "listen_port": 2080,
+      "listen_port": 7890,
       "sniff": true,
       "users": []
     }
