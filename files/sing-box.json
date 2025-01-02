@@ -305,14 +305,11 @@
     {
       "tag":"HongKong",
       "type":"selector",
-      "outbounds":[],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+      "outbounds":[]
     },
     {
       "tag":"TaiWan",
-      "type":"selector",
+      "type":"urltest",
       "outbounds":[],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -321,26 +318,17 @@
     {
       "tag":"Singapore",
       "type":"selector",
-      "outbounds":[],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+      "outbounds":[]
     },
     {
       "tag":"Japan",
       "type":"selector",
-      "outbounds":[],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+      "outbounds":[]
     },
     {
       "tag":"America",
       "type":"selector",
-      "outbounds":[],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
+      "outbounds":[]
     },
     {
       "tag":"Others",
