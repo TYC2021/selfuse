@@ -14,7 +14,8 @@
     },
   "cache_file": {
     "enabled": true,
-    "store_fakeip": false
+    "store_fakeip": true,
+    "store_rdrc": true
     }
   },
   "dns": {
@@ -36,16 +37,14 @@
       {
         "tag": "fakeip",
         "address": "fakeip"
-      },
-      {
-        "tag": "block",
-        "address": "rcode://success"
       }
     ],
     "rules": [
       {
-        "rule_set": "geosite-category-ads-all",
-        "server": "block"
+        "domain": [
+          "cdn.jsdelivr.net"
+        ],
+        "server": "google"
       },
       {
         "outbound": "any",
