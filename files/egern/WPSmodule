@@ -1,0 +1,7 @@
+#!name=WPS 国际版去开屏订阅
+
+[Script]
+replaceBody = type=http-response, pattern=^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/wps-ios-351108\/namespaces\/firebase:fetch\?key=.*, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, max-size=-1, timeout=30, argument=%5C%5C%22guide%5C%5C%22%2C%5C%5C%22subscribe%5C%5C%22-%3E%5C%5C%5C%22guide%5C%5C%5C%22
+
+[MITM]
+hostname = %APPEND% firebaseremoteconfig.googleapis.com
