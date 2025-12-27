@@ -8,8 +8,7 @@ HOST-KEYWORD, zajourney, DIRECT
 
 # Ant Bank 
 HOST-KEYWORD, antbank, DIRECT
-HOST-SUFFIX, antbank.hk, DIRECT
-HOST-SUFFIX, antbank.com.hk, DIRECT
+HOST-KEYWORD, ant-hkbank, DIRECT
 HOST-SUFFIX, antgroup.com, DIRECT
 HOST-SUFFIX, alipay.com, DIRECT
 HOST-SUFFIX, alipay.hk, DIRECT
