@@ -1,18 +1,16 @@
-#ZA bank
-HOST-SUFFIX, za.group,DIRECT
-HOST-SUFFIX, zabank.com,DIRECT
-HOST-SUFFIX, zabank.com.hk,DIRECT
-HOST-SUFFIX, za.tech,DIRECT
-HOST-KEYWORD, zafinsvc, DIRECT
-HOST-KEYWORD, zajourney, DIRECT
+#中银香港
+host-suffix, bochk.com, direct
+host-suffix, etnet.com.hk, direct
 
-# Ant Bank 
-HOST-KEYWORD, antbank, DIRECT
-HOST-KEYWORD, ant-hkbank, DIRECT
-HOST-KEYWORD, aliyun, DIRECT
-HOST-SUFFIX, antgroup.com, DIRECT
-HOST-SUFFIX, alipay.com, DIRECT
-HOST-SUFFIX, alipay.hk, DIRECT
+#汇丰银行
+host-suffix, hsbc.com.hk, direct
+host-suffix, tealiumiq.com, direct
+host-suffix, online-metrix.net, direct
+host, mobile.eum-appdynamics.com, direct
 
-#Bochk
-HOST-KEYWORD, bochk, DIRECT
+#众安银行
+host, bankappgw.za.group, direct
+host, graph.facebook.com, direct
+host-suffix, za.group, direct
+host-suffix, zafinsvc.com, direct
+host-suffix, zajourney.com, direct
