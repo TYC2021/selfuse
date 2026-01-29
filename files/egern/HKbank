@@ -1,0 +1,17 @@
+#ZAbank
+DOMAIN,graph.facebook.com
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
+DOMAIN-KEYWORD,za.group
+
+#BocHK
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,etnet.com.hk
+
+#HSBC
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,tealiumiq.com
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN,mobile.eum-appdynamics.com
+
+
