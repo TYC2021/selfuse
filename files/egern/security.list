@@ -1,7 +1,8 @@
 #IBKR
-DOMAIN-KEYWORD,api.ibkr.com
+DOMAIN-KEYWORD,ibkr.com
 DOMAIN-KEYWORD,ibllc.com
 DOMAIN-SUFFIX,interactivebrokers.com
+
 #Charles Schwab
 DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,cnbc.com
