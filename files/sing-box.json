@@ -6,7 +6,8 @@
   },
   "http_clients": [
     {
-      "tag": "direct-http"
+      "tag": "rule-set-http",
+      "domain_resolver": "local"
     }
   ],
   "dns": {
@@ -33,10 +34,11 @@
     "rules": [
       {
         "domain": [
+          "testingcf.jsdelivr.net",
           "cdn.jsdelivr.net"
         ],
         "action": "route",
-        "server": "remote"
+        "server": "local"
       },
       {
         "clash_mode": "direct",
@@ -66,7 +68,10 @@
     "strategy": "prefer_ipv4",
     "timeout": "10s",
     "reverse_mapping": true,
-    "optimistic": true
+    "optimistic": {
+      "enabled": true,
+      "timeout": "3d"
+    }
   },
   "inbounds": [
     {
@@ -98,15 +103,7 @@
     {
       "type": "selector",
       "tag": "Proxy",
-      "outbounds": [
-        "HK",
-        "TW",
-        "SG",
-        "JP",
-        "US",
-        "Others",
-        "direct"
-      ],
+      "outbounds": [],
       "default": "direct"
     },
     {
@@ -189,8 +186,7 @@
       "tag": "Bahamut",
       "outbounds": [
         "TW",
-        "Proxy",
-        "direct"
+        "Proxy"
       ],
       "default": "TW"
     },
@@ -361,7 +357,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_http_client": "direct-http",
+    "default_http_client": "rule-set-http",
     "rules": [
       {
         "inbound": [
@@ -547,219 +543,290 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-google.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-telegram.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-twitter",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-twitter.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-facebook",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/facebook.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-facebook.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-netflix.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-apple",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-apple.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-bilibili",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/bilibili.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-bilibili.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geoip-cn.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-private",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-private.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-openai.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-youtube.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-google.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-github.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-telegram.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-twitter",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-twitter.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-facebook",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-facebook.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-bilibili",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-bilibili.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-bahamut",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bahamut.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-bahamut.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-spotify",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-spotify.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-tiktok",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-tiktok.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-netflix.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-disney",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-disney.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-apple.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-amazon",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/amazon.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-amazon.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-microsoft.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-category-games",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-category-games.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-hbo",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-hbo.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-primevideo",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-primevideo.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-cn.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-geolocation-!cn.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "http_client": "direct-http"
+        "initial_path": "rule-set/geosite-category-ads-all.srs",
+        "http_client": "rule-set-http",
+        "update_interval": "7d"
       }
     ],
     "final": "Proxy"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "substore-1.14",
+      "store_fakeip": true,
+      "store_dns": true
+    }
   }
 }
