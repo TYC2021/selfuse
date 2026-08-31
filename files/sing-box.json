@@ -103,8 +103,7 @@
     {
       "type": "selector",
       "tag": "Proxy",
-      "outbounds": [],
-      "default": "direct"
+      "outbounds": []
     },
     {
       "type": "selector",
