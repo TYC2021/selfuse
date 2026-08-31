@@ -2,7 +2,7 @@
 {
   "$schema": "https://sing-box.sagernet.org/schema.json",
   "log": {
-    "level": "warn",
+    "level": "info",
     "output": "sing-box.log",
     "timestamp": true
   },
@@ -11,8 +11,9 @@
       {
         "type": "https",
         "tag": "google",
-        "detour": "proxy",
-        "server": "8.8.8.8"        
+        "server": "8.8.8.8",
+        "path": "/dns-query",
+        "detour": "proxy"
       },
       {
         "type": "quic",
