@@ -1,6 +1,4 @@
 {
-  "$schema": "https://sing-box.sagernet.org/schema.json",
-
   "log": {
     "level": "info",
     "output": "sing-box.log",
