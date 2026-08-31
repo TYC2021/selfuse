@@ -1,3 +1,4 @@
+#core 1.14
 {
   "$schema": "https://sing-box.sagernet.org/schema.json",
   "log": {
